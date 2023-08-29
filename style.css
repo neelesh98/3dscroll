@@ -1,0 +1,84 @@
+/* Hide default scrollbars */
+/* body {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+  } */
+  
+  /* Hide default scrollbars for webkit-based browsers */
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+.scroll_class {
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute; */
+    z-index: 5;
+}
+
+h1 {
+    color: #e60000;
+}
+canvas {
+    position: fixed;
+    top : 0;
+}
+
+.container {
+    position: absolute;
+    top : 0;
+}
+
+/* .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.hero-head {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 250px;
+    transition: 50ms;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.zero-opacity {
+    opacity: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+  }
+
+.sec-2 {
+    display: flex;
+    align-items: center;
+}
+
+.font-250 {
+    font-size: 250px;
+    transition: all 2s ease-out;
+}
+
+.hide {
+    display: none;
+}
+
+.st-1 {
+    text-align: center;
+}
+
+.st-1-e {
+    font-size: 0;
+}
+
+.final-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
