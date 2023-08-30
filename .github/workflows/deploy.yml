@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./3dscroll
 
   deploy:
     name: Deploy
@@ -40,7 +40,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./dist
+          path: ./3dscroll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
